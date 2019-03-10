@@ -26,8 +26,6 @@ stdenv.mkDerivation rec {
 
   propagatedBuildInputs = [ gnome3.gsettings-desktop-schemas ];
 
-  ninjaFlags = ["--verbose"];
-
   patches = [
     (substituteAll {
       src = ./bubblewrap-paths.patch;
