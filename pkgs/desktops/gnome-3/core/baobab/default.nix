@@ -4,13 +4,13 @@
 
 let
   pname = "baobab";
-  version = "3.31.1";
+  version = "3.32.0";
 in stdenv.mkDerivation rec {
   name = "${pname}-${version}";
 
   src = fetchurl {
     url = "mirror://gnome/sources/${pname}/${stdenv.lib.versions.majorMinor version}/${name}.tar.xz";
-    sha256 = "1lc3i1lly3p39zpqm6q42000dm8lzq2j2l7k0jp177c1bgq4385v";
+    sha256 = "0b33s9bhpiffv5wl76cq2bbnqhvx3qs2vxyxmil5gcs583llqh9r";
   };
 
   nativeBuildInputs = [ meson ninja pkgconfig vala gettext itstool libxml2 desktop-file-utils wrapGAppsHook ];
