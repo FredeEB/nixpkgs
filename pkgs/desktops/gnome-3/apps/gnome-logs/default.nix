@@ -3,11 +3,11 @@
 
 stdenv.mkDerivation rec {
   name = "gnome-logs-${version}";
-  version = "3.31.4";
+  version = "3.32.0";
 
   src = fetchurl {
     url = "mirror://gnome/sources/gnome-logs/${stdenv.lib.versions.majorMinor version}/${name}.tar.xz";
-    sha256 = "1gji11isymc8dx8fca9kyq8vn425qxdm6qj1ylkadj3878swira1";
+    sha256 = "1cn0ms24y9sg1kvhmk4mj7v9fi0n6ylyf11jjh4k81wfjsaah7w4";
   };
 
   mesonFlags = [
