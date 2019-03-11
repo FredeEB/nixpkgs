@@ -1,14 +1,14 @@
 { stdenv, fetchurl, fetchpatch, glib, pkgconfig, perl, gettext, gobject-introspection, libtool, gnome3, gtk-doc }:
 let
   pname = "libgtop";
-  version = "2.39.91";
+  version = "2.40.0";
 in
 stdenv.mkDerivation rec {
   name = "${pname}-${version}";
 
   src = fetchurl {
     url = "mirror://gnome/sources/${pname}/${stdenv.lib.versions.majorMinor version}/${name}.tar.xz";
-    sha256 = "03qz4wag711s152kvfiq80qwqcxpxk09rwmxyzbp59c03j8f6a1l";
+    sha256 = "1m6jbqk8maa52gxrf223442fr5bvvxgb7ham6v039i3r1i62gwvq";
   };
 
   propagatedBuildInputs = [ glib ];
