@@ -9,13 +9,13 @@
 
 let
   pname = "gvfs";
-  version = "1.39.92";
+  version = "1.40.0";
 in stdenv.mkDerivation rec {
   name = "${pname}-${version}";
 
   src = fetchurl {
     url = "mirror://gnome/sources/${pname}/${stdenv.lib.versions.majorMinor version}/${name}.tar.xz";
-    sha256 = "04smpm0bmcmfx0k9glihyinqmys8las3pag5rg4bcs3j29y30i5f";
+    sha256 = "1wp266dx3v2nwrf46cb4vpmv5d4qaag5yb5gkw7rynn9g55xcf9p";
   };
 
   postPatch = ''
